@@ -12,7 +12,7 @@ class DefaultController extends Controller
     /**
      * @Route("/")
      * @Template()
-     * @cache(maxage=120)
+     * @cache(smaxage=60)
      */
     public function indexAction()
     {
