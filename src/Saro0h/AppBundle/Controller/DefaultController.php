@@ -16,6 +16,16 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
+        return array();
+    }
+
+    /**
+     * @Route("/content")
+     * @Template()
+     * @cache(smaxage=20)
+     */
+    public function getContentAction()
+    {
         return array('date' => new \Datetime());
     }
 }
