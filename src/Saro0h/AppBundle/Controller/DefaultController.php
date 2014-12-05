@@ -12,7 +12,7 @@ class DefaultController extends Controller
     /**
      * @Route("/")
      * @Template()
-     * @cache(smaxage=60)
+     * @Cache(smaxage=60)
      */
     public function indexAction()
     {
@@ -22,7 +22,7 @@ class DefaultController extends Controller
     /**
      * @Route("/content")
      * @Template()
-     * @cache(smaxage=20)
+     * @Cache(smaxage=20)
      */
     public function getContentAction()
     {
